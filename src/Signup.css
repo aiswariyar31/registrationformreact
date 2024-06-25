@@ -1,0 +1,119 @@
+/* Form container styling */
+form {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    border: 1px solid #ff00c8;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .spline-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  /* Form container hover state */
+  form:hover {
+    backdrop-filter: blur(0px);
+    transform: scale(1.02);
+  }
+  
+  /* Individual form element container */
+  div {
+    margin-bottom: 10px;
+  }
+  
+  /* Label styling */
+  label {
+    display: block;
+    margin-bottom: .5em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Input field styling */
+  input {
+    width: 100%;
+    padding: 0.7em;
+    font-size: 1em;
+    border: 1px solid #2ed7d7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+  }
+  
+  /* Input field focus state */
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  button {
+    display: block;
+    width: 50%;
+    padding: 0.7em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4b648a;
+    
+    border-radius: 50px;
+    cursor: pointer;
+    border-color: #ff00c8;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; 
+    margin-top: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #000000;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Button hover state */
+  button:hover {
+    background-color: #cf4fcd;
+  }
+  
+  /* Error message styling */
+  span {
+    display: block;
+    margin-top: 0.3em;
+    color: rgb(255, 0, 0);
+    font-size: 0.9em;
+  }
+  
+  /* Add additional styling for better UX */
+  input:disabled,
+  button:disabled {
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      max-width: 400px;
+      margin: 2em auto;
+      padding: 1.5em;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 0.6em;
+    }
+  }
+  
